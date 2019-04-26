@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oJN-Gt-zU1">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uYe-1K-LCb">
+            <objects>
+                <navigationController id="oJN-Gt-zU1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uKd-qU-7ic">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R1j-eZ-Y2o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dvk-UI-WGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1409" y="152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrailerApp500781101" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-bk-d7t">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E8T-bk-d7t" secondAttribute="trailing" id="0nB-VN-Tej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E8T-bk-d7t" secondAttribute="bottom" id="3sM-6j-z3W"/>
+                            <constraint firstItem="E8T-bk-d7t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YDe-rR-uTM"/>
+                            <constraint firstItem="E8T-bk-d7t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zuC-vb-4lP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rbK-ki-PXo"/>
+                    <connections>
+                        <outlet property="tableView" destination="E8T-bk-d7t" id="9We-WO-Mtf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="xRS-1b-8Ug">
+            <objects>
+                <viewController restorationIdentifier="DetailController" storyboardIdentifier="DetailController" id="hUm-bW-prG" customClass="DetailController" customModule="TrailerApp500781101" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQ1-iM-28G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e9I-R0-Bbj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="ckV-4r-EDD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-2O-wMz">
+                                <rect key="frame" x="32" y="239" width="116" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="WmS-dD-xs1"/>
+                                    <constraint firstAttribute="height" constant="170" id="qrw-cG-uQu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNx-x8-iBQ">
+                                <rect key="frame" x="165" y="322" width="90" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ivo-5l-v0l">
+                                <rect key="frame" x="32" y="442" width="350" height="420"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-gm-207">
+                                <rect key="frame" x="165" y="347" width="91" height="30"/>
+                                <state key="normal" title="Watch Trailer"/>
+                                <connections>
+                                    <action selector="watchTrailer:" destination="hUm-bW-prG" eventType="touchUpInside" id="zsP-z4-wOq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FNx-x8-iBQ" firstAttribute="top" secondItem="e9I-R0-Bbj" secondAttribute="bottom" constant="14" id="6a2-io-khO"/>
+                            <constraint firstItem="e9I-R0-Bbj" firstAttribute="leading" secondItem="9yL-dw-oYX" secondAttribute="leading" id="BzF-IL-X1F"/>
+                            <constraint firstItem="e9I-R0-Bbj" firstAttribute="top" secondItem="9yL-dw-oYX" secondAttribute="top" id="HF8-c8-8uP"/>
+                            <constraint firstItem="FNx-x8-iBQ" firstAttribute="leading" secondItem="dDh-2O-wMz" secondAttribute="trailing" constant="17" id="JGB-Rv-eFL"/>
+                            <constraint firstItem="9yL-dw-oYX" firstAttribute="trailing" secondItem="JX0-gm-207" secondAttribute="trailing" constant="158" id="K1w-Kv-82P"/>
+                            <constraint firstItem="9yL-dw-oYX" firstAttribute="trailing" secondItem="FNx-x8-iBQ" secondAttribute="trailing" constant="159" id="MjI-Z6-Ve1"/>
+                            <constraint firstItem="JX0-gm-207" firstAttribute="leading" secondItem="dDh-2O-wMz" secondAttribute="trailing" constant="17" id="S22-8l-87z"/>
+                            <constraint firstItem="Ivo-5l-v0l" firstAttribute="bottom" secondItem="9yL-dw-oYX" secondAttribute="bottom" id="Ske-sa-yrt"/>
+                            <constraint firstItem="Ivo-5l-v0l" firstAttribute="leading" secondItem="9yL-dw-oYX" secondAttribute="leading" constant="32" id="ZGl-vc-4p1"/>
+                            <constraint firstItem="dDh-2O-wMz" firstAttribute="top" secondItem="9yL-dw-oYX" secondAttribute="top" constant="195" id="bOp-C6-Uuu"/>
+                            <constraint firstItem="JX0-gm-207" firstAttribute="top" secondItem="FNx-x8-iBQ" secondAttribute="bottom" constant="25" id="cdN-zd-i5s"/>
+                            <constraint firstItem="Ivo-5l-v0l" firstAttribute="top" secondItem="dDh-2O-wMz" secondAttribute="bottom" constant="33" id="dHu-Ww-ifN"/>
+                            <constraint firstItem="9yL-dw-oYX" firstAttribute="trailing" secondItem="e9I-R0-Bbj" secondAttribute="trailing" id="qbQ-8N-cn1"/>
+                            <constraint firstItem="dDh-2O-wMz" firstAttribute="leading" secondItem="9yL-dw-oYX" secondAttribute="leading" constant="32" id="sK9-Dr-yYp"/>
+                            <constraint firstItem="9yL-dw-oYX" firstAttribute="trailing" secondItem="dDh-2O-wMz" secondAttribute="trailing" constant="266" id="xwb-Q2-I1M"/>
+                            <constraint firstItem="9yL-dw-oYX" firstAttribute="trailing" secondItem="Ivo-5l-v0l" secondAttribute="trailing" constant="32" id="yIA-Hn-taf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9yL-dw-oYX"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagePoster" destination="e9I-R0-Bbj" id="Mcv-hj-elY"/>
+                        <outlet property="imagePosterr" destination="dDh-2O-wMz" id="rs6-Qr-0tz"/>
+                        <outlet property="textViewDes" destination="Ivo-5l-v0l" id="Hbf-FA-2z4"/>
+                        <outlet property="titleTrailer" destination="FNx-x8-iBQ" id="wO6-cb-jkw"/>
+                        <outlet property="watchTrailerButton" destination="JX0-gm-207" id="Edo-3u-Sz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIU-7F-cj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.8550724637682" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+</document>
